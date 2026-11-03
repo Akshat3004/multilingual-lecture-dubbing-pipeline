@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+outputs/
+*.mp4
+*.mov
+*.avi
+*.wav
+*.mp3
+.env
+.DS_Store
+build/
+dist/
+*.egg-info/

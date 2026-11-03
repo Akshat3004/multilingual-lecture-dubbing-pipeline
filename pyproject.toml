@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "multilingual-lecture-dubber"
+version = "0.1.0"
+description = "An experimental audio-dubbing baseline for lecture videos; not visual lip synchronization"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "openai-whisper>=20240930",
+  "deep-translator>=1.11",
+  "gTTS>=2.5",
+]
+
+[project.scripts]
+lecture-dubber = "lecture_dubber.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
